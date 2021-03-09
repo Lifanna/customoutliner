@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\apps\HandyOutliner\Project\OutlineTool\lib\HandyOutliner.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDC9C3DD-6DD5-47AD-A33F-A10712C7247C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>HandyOutliner</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.1.6.3</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>HandyOutliner</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aga.Controls" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="itextsharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutDialog.cs" />
+    <Compile Include="BaseForm.cs" />
+    <Compile Include="BookmarkDetailsDialog.cs" />
+    <Compile Include="Const.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Outline.cs" />
+    <Compile Include="OutlineModel.cs" />
+    <Compile Include="Platform.cs" />
+    <Compile Include="PlatformUtils.cs" />
+    <Compile Include="ShiftPageNumScope.cs" />
+    <Compile Include="ShiftPageNumDialog.cs" />
+    <Compile Include="MainForm.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Res.cs" />
+    <Compile Include="TocOptionsDialog.cs" />
+    <Compile Include="ITraceOutputHandler.cs" />
+    <Compile Include="TraceOutput.cs" />
+    <Compile Include="UpdatesForm.cs" />
+    <Compile Include="VersionInfo.cs" />
+    <Compile Include="XmlLocalizer.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Multilang\EncodingUtility.cs" />
+    <Compile Include="Multilang\__MIDL_IWinTypes_0009.cs" />
+    <Compile Include="Multilang\_FILETIME.cs" />
+    <Compile Include="Multilang\_LARGE_INTEGER.cs" />
+    <Compile Include="Multilang\_RemotableHandle.cs" />
+    <Compile Include="Multilang\_ULARGE_INTEGER.cs" />
+    <Compile Include="Multilang\CMLangConvertCharset.cs" />
+    <Compile Include="Multilang\CMLangConvertCharsetClass.cs" />
+    <Compile Include="Multilang\CMLangString.cs" />
+    <Compile Include="Multilang\CMLangStringClass.cs" />
+    <Compile Include="Multilang\CMultiLanguage.cs" />
+    <Compile Include="Multilang\CMultiLanguageClass.cs" />
+    <Compile Include="Multilang\IEnumCodePage.cs" />
+    <Compile Include="Multilang\IEnumRfc1766.cs" />
+    <Compile Include="Multilang\IEnumScript.cs" />
+    <Compile Include="Multilang\IMLangCodePages.cs" />
+    <Compile Include="Multilang\IMLangConvertCharset.cs" />
+    <Compile Include="Multilang\IMLangFontLink.cs" />
+    <Compile Include="Multilang\IMLangFontLink2.cs" />
+    <Compile Include="Multilang\IMLangLineBreakConsole.cs" />
+    <Compile Include="Multilang\IMLangString.cs" />
+    <Compile Include="Multilang\IMLangStringAStr.cs" />
+    <Compile Include="Multilang\IMLangStringBufA.cs" />
+    <Compile Include="Multilang\IMLangStringBufW.cs" />
+    <Compile Include="Multilang\IMLangStringWStr.cs" />
+    <Compile Include="Multilang\IMultiLanguage.cs" />
+    <Compile Include="Multilang\IMultiLanguage2.cs" />
+    <Compile Include="Multilang\IMultiLanguage3.cs" />
+    <Compile Include="Multilang\ISequentialStream.cs" />
+    <Compile Include="Multilang\IStream.cs" />
+    <Compile Include="Multilang\DetectEncodingInfo.cs" />
+    <Compile Include="Multilang\tagMIMECONTF.cs" />
+    <Compile Include="Multilang\tagMIMECPINFO.cs" />
+    <Compile Include="Multilang\tagMIMECSETINFO.cs" />
+    <Compile Include="Multilang\MLCPF.cs" />
+    <Compile Include="Multilang\MLDETECTCP.cs" />
+    <Compile Include="Multilang\tagMLSTR_FLAGS.cs" />
+    <Compile Include="Multilang\tagRFC1766INFO.cs" />
+    <Compile Include="Multilang\tagSCRIPFONTINFO.cs" />
+    <Compile Include="Multilang\tagSCRIPTINFO.cs" />
+    <Compile Include="Multilang\tagSTATSTG.cs" />
+    <Compile Include="Multilang\tagUNICODERANGE.cs" />
+    <Compile Include="IO\DjVuSource.cs" />
+    <Compile Include="IO\DsedSource.cs" />
+    <Compile Include="IO\OutlineSource.cs" />
+    <Compile Include="IO\PdfSource.cs" />
+    <Compile Include="IO\SourceFormat.cs" />
+    <Compile Include="IO\SourceOptions.cs" />
+    <Compile Include="IO\StduSource.cs" />
+    <Compile Include="IO\TextSource.cs" />
+    <Compile Include="Integration\DefaultConnector.cs" />
+    <Compile Include="Integration\ProcessAdapter.cs" />
+    <Compile Include="Integration\ProcessConnector.cs" />
+    <Compile Include="Integration\Win32\AcrobatAdapter.cs" />
+    <Compile Include="Integration\Win32\WinDjViewAdapter.cs" />
+    <Compile Include="Integration\Win32\WindowMonitor.cs" />
+    <Compile Include="Integration\Win32\STDUViewerAdapter.cs" />
+    <Compile Include="Integration\Win32\NativeWindow.cs" />
+    <Compile Include="Integration\Win32\HookCallback.cs" />
+    <Compile Include="Integration\Win32\Win32MessageHandler.cs" />
+    <Compile Include="Integration\Win32\EnumThreadDelegate.cs" />
+    <Compile Include="Integration\Win32\WindowEnumProc.cs" />
+    <Compile Include="Integration\Win32\NativeMethods.cs" />
+    <Compile Include="Integration\Win32\Win32Adapter.cs" />
+    <Compile Include="Integration\Win32\Win32Connector.cs" />
+    <Compile Include="Integration\Linux\NativeMethods.cs" />
+    <Compile Include="Expression\ExprContext.cs" />
+    <Compile Include="Expression\ExprCompiler.cs" />
+    <Compile Include="Controls\BindableToolStripMenuItem.cs" />
+    <Compile Include="Controls\InfoControl.cs" />
+    <Compile Include="Controls\ToolStripCheckBox.cs" />
+    <Compile Include="Controls\ToolStripNumericUpDown.cs" />
+    <Compile Include="Controls\TraceOutputControl.cs" />
+    <Compile Include="Controls\UpDownWithLabel.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutDialog.resx" />
+    <EmbeddedResource Include="BaseForm.resx" />
+    <EmbeddedResource Include="BookmarkDetailsDialog.resx" />
+    <EmbeddedResource Include="Controls\InfoControl.resx" />
+    <EmbeddedResource Include="Controls\TraceOutputControl.resx" />
+    <EmbeddedResource Include="Controls\UpDownWithLabel.resx" />
+    <EmbeddedResource Include="Languages\English.xml" />
+    <EmbeddedResource Include="MainForm.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="ShiftPageNumDialog.resx" />
+    <EmbeddedResource Include="TocOptionsDialog.resx" />
+    <EmbeddedResource Include="UpdatesForm.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
