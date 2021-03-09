@@ -307,7 +307,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "Встраиватель закладок WinDjView в документы DjVu и PDF"))
         self.bookmark_btn.setText(_translate("MainWindow", "Файл закладок"))
         self.djvu_btn.setText(_translate("MainWindow", "Файл DJVU"))
-        self.convert_btn.setText(self.tr("Perspective"))
+        self.convert_btn.setText("Встроить оглавление")
 
 
 if __name__ == "__main__":
